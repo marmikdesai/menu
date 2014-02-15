@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body, html, p, h1, h2, h3, section, article, div, figure{
+	margin:0px;
+	padding:0px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+image {
+    border: none;
+}
+img{
+	vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+input, textarea, button{
+	outline:none;
+}
+body, html{
+	height:100%;
+}
+body{
+	overflow: hidden;
+}
+.mai{
+	width:100%;
+	float:left;
+}
+.mai1{
+	width:100%;
+	float:left;
+	left:0px;
+	position:absolute;
+	background:rgb(199, 54, 219);
+	-webkit-transition: 1s all linear;
+	-moz-transition: 1s all linear;
+	-o-transition: 1s all linear;
+	-ms-transition: 1s all linear;
+	transition: 1s all linear;
+	height:100%;
+}
+.mai1 a{
+	color:#fff;
+}
+.sli{
+	width:200px;
+	float:left;
+	position:absolute;
+	left:-200px;
+	background:blue;
+	-webkit-transition: 1s all linear;
+	-moz-transition: 1s all linear;
+	-o-transition: 1s all linear;
+	-ms-transition: 1s all linear;
+	transition: 1s all linear;
+}
+.log1{
+	float:left;
+	width:100%;
+	background:#fff;
+}
+.mnu1{
+	width:100%;
+	float:left;
+}
+.mnu1 ul{
+	width:100%;
+	float:left;
+}
+.mnu1 ul li{
+	width:100%;
+	float:left;
+	padding:0px 3%;
+	line-height:40px;
+	font-size:14px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #fff;
+}
+.mnu1 ul li:first-child{
+	border-top:0px solid #ccc;
+}
+.mnu1 ul li:last-child{
+	border-bottom:0px solid #fff;
+}
+.mnu1 ul li a{
+	color:#fff;
+}
