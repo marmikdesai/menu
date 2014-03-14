@@ -29,6 +29,8 @@ body, html{
 }
 body{
 	overflow: hidden;
+	font-size:13px;
+	font-family: arial,sans-serif;
 }
 .mai{
 	width:100%;
@@ -39,7 +41,7 @@ body{
 	float:left;
 	left:0px;
 	position:absolute;
-	background:rgb(199, 54, 219);
+	background:#fff;
 	-webkit-transition: 1s all linear;
 	-moz-transition: 1s all linear;
 	-o-transition: 1s all linear;
@@ -48,14 +50,13 @@ body{
 	height:100%;
 }
 .mai1 a{
-	color:#fff;
+	color:#000;
 }
 .sli{
-	width:200px;
+	width:500px;
 	float:left;
 	position:absolute;
-	left:-200px;
-	background:blue;
+	left:-500px;
 	-webkit-transition: 1s all linear;
 	-moz-transition: 1s all linear;
 	-o-transition: 1s all linear;
@@ -74,11 +75,12 @@ body{
 .mnu1 ul{
 	width:100%;
 	float:left;
+	background:rgb(224, 203, 50);
+	position:absolute;
 }
 .mnu1 ul li{
 	width:100%;
 	float:left;
-	padding:0px 3%;
 	line-height:40px;
 	font-size:14px;
 	border-top:1px solid #ccc;
@@ -92,4 +94,23 @@ body{
 }
 .mnu1 ul li a{
 	color:#fff;
+	display:block;
+	padding:0px 3%;
+}
+.mnu1 ul li > ul {
+	visibility:hidden;
+}
+.mnu1 ul li ul{
+	width:100%;
+	float:left;
+	position:absolute;
+	top:0px;
+	left:-500px;
+	background: rgb(224, 203, 50);
+	height:100%;
+	-webkit-transition: 1s all linear;
+	-moz-transition: 1s all linear;
+	-o-transition: 1s all linear;
+	-ms-transition: 1s all linear;
+	transition: 1s all linear;
 }
