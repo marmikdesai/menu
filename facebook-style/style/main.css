@@ -24,39 +24,86 @@ ul, li {
 input, textarea, button{
 	outline:none;
 }
+html {
+	-ms-touch-action: none;
+}
 body, html{
 	height:100%;
+	overflow:hidden;
 }
 body{
-	overflow: hidden;
 	font-size:13px;
 	font-family: arial,sans-serif;
 }
-.mai{
+/* main html */
+.wrapper{
 	width:100%;
+	float:left;
+}
+header{
+	width:100%;
+	float:left;
+	background:#3cbc95;
+	line-height: 25px;
+	font-size:18px;
+	font-family: arial,sans-serif;
+	color:#000;
+	text-align:center;
+	font-weight:600;
+	line-height:50px;
+}
+.logo{
+	width:100%;
+	float:left;
+	height:100px;
+}
+nav{
+	width:100%;
+	float:left;
+	background:#8ca6d2;
+}
+.content, .content a{
+	width:100%;
+	float:left;
+	background:#f1f1f1;
+	display:block;
+	padding: 5px 20px;
+	line-height: 25px;
+	font-size:12px;
+	font-family: arial,sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+/* main html */
+.mai{
+	width:60px;
 	float:left;
 }
 .mai1{
 	width:100%;
 	float:left;
 	left:0px;
+	height: 100%;
 	position:absolute;
+	overflow: auto;
 	background:#fff;
 	-webkit-transition: 1s all linear;
 	-moz-transition: 1s all linear;
 	-o-transition: 1s all linear;
 	-ms-transition: 1s all linear;
-	transition: 1s all linear;
-	height:100%;
+}
+.customScroll{
+	width: 100%;
+	float:left;
 }
 .mai1 a{
 	color:#000;
 }
 .sli{
-	width:500px;
+	width:260px;
 	float:left;
-	position:absolute;
-	left:-500px;
+	position:fixed;
+	left:0px;
 	-webkit-transition: 1s all linear;
 	-moz-transition: 1s all linear;
 	-o-transition: 1s all linear;
@@ -113,4 +160,38 @@ body{
 	-o-transition: 1s all linear;
 	-ms-transition: 1s all linear;
 	transition: 1s all linear;
+}
+.android_device .customScroll, .ios_device .customScroll, .window_device .customScroll{
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.android_device .mai1, .ios_device .mai1, .window_device .mai1 {
+	width:100%;
+	float:left;
+	left:0px;
+	height: 100%;
+	position:absolute;
+	overflow: hidden;
+	background:#fff;
+	-webkit-transition: 1s all linear;
+	-moz-transition: 1s all linear;
+	-o-transition: 1s all linear;
+	-ms-transition: 1s all linear;
 }
