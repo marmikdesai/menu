@@ -1,3 +1,10 @@
+/*!
+ * Facebook Style Mobile Menu with custom scroll
+ * Original author: @Marmik Desai
+ * Further changes, comments: @Marmik Desai
+ * Licensed under the MIT license
+ */
+ 
 $(document).ready(function(){
 	swip();
 	menuClick();

@@ -1,3 +1,10 @@
+/*!
+ * Mobile Menu Overlap on body
+ * Original author: @Marmik Desai
+ * Further changes, comments: @Marmik Desai
+ * Licensed under the MIT license
+ */
+ 
 $(document).ready(function(){
 	swip();
 	menuClick();
