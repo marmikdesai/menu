@@ -46,10 +46,8 @@ function menuClick(){
 	});
 };
 function bodyClick(){
-	$(".wrapper, .sli").on("click touchstart", function(){
-		console.log(34);
+	$(".wrapper").on("click touchstart", function(){
 		if ($('.sli').hasClass("open")) {
-			console.log(36);
 			menuClose();
 			return false;
 		}
